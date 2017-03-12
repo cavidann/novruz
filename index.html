@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Accordion</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+</head>
+</body>
+</html>
+
+    <div class="main">
+        <h1 id=1 onclick="showText()">Section 1</h1>
+        <p id = 'show1' style="display: block;">Mauris mauris ante, blandit et, ultrices a, suscipit ege`t, quam. Integer ut neque. Vivamus nisi metus, molestie
+            vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio.
+            Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+        <script>
+$(document).ready(function(){
+    $("#1").click(function(){
+        $("#show1").slideDown("slow");
+    });
+});
+</script>
+        <h1 id=2 onclick="showText1()">Section 2</h1>
+        <p id = 'show2' style="display: none;">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel,
+            gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+            malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+        <script>
+$(document).ready(function(){
+    $("#2").click(function(){
+        $("#show2").slideDown("slow");
+    });
+});
+</script>
+        <h1 id=3 onclick="showText2()">Section 3</h1>
+        <p id = 'show3' style="display: none;">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel,
+            gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+            malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+        <script>
+$(document).ready(function(){
+    $("#3").click(function(){
+        $("#show3").slideDown("slow");
+    });
+});
+</script>
+        <h1 id=4 onclick="showText3()">Section 4</h1>
+        <p id = 'show4' style="display: none;">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel,
+            gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
+            malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+            <script>
+$(document).ready(function(){
+    $("#4").click(function(){
+        $("#show4").slideDown("slow");
+    });
+});
+</script>
+    </div>
+</body>
+<script src='script.js'></script>
+
+
+</html>
