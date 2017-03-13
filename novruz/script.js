@@ -1,22 +1,20 @@
-var countDownDate = new Date("Mar 21, 2017 00:00:00").getTime();
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-
-  var distance = countDownDate - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("demo").innerHTML = days + "d ";    
-document.getElementById("demo1").innerHTML =hours + "h ";
-document.getElementById("demo2").innerHTML = minutes + "m ";
-document.getElementById("demo3").innerHTML = seconds + "s ";
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+    function m(){
+    var isiq = document.getElementsByClassName('isiq');
+    isiq[0].style.background = 'red';
+    isiq[1].style.background = '#ccc';
+    isiq[2].style.background = '#ccc';   
+    function s() {
+        isiq[1].style.background = 'yellow';
+        isiq[0].style.background = '#ccc';
+        isiq[2].style.background = '#ccc';
+    }
+    function y() {
+        isiq[2].style.background = 'green';        
+        isiq[0].style.background = '#ccc';
+        isiq[1].style.background = '#ccc';      
+    }  
+    var s1 = setTimeout(s, 5000);
+    var y1 = setTimeout(y, 7000); 
+    var s=setInterval(m,12000);
+    }
+    m();
