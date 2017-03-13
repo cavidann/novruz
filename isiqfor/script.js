@@ -1,4 +1,4 @@
-  setInterval(function () {        
+    function m(){
     var isiq = document.getElementsByClassName('isiq');
     isiq[0].style.background = 'red';
     isiq[1].style.background = '#ccc';
@@ -15,5 +15,6 @@
     }  
     var s1 = setTimeout(s, 5000);
     var y1 = setTimeout(y, 7000); 
- }, 12000);
-
+    var s=setInterval(m,12000);
+    }
+    m();
