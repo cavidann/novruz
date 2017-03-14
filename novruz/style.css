@@ -1,0 +1,38 @@
+.kv{    
+    height: 130px;
+    float: left;
+    border: 1px solid;
+    border-radius:10%;
+    /*margin:70px 5px;*/
+    padding:10px; 
+    background: white;
+    
+}
+p{
+    font-size:100px; 
+}
+.main{
+    background: black;
+    border-radius: 5%; 
+    height: 350px;
+    margin: 0 auto;
+    width: 900px
+}
+.clear{
+    clear: both;
+}
+.white{
+    float: left;
+    color: white;
+    width: 50px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 130px;      
+}
+.marginleft{
+    margin-left: 73px; 
+}
+.txt{
+    text-align: center;
+    font-size: 50px; 
+}
